@@ -1,0 +1,29 @@
+headcount = CALCULATE(COUNT(data[Emp ID]),ALL(data))
+
+LBL over 20 days = CALCULATE(COUNT(data[Emp ID]),data[Leave Balance]>20)
+
+no of females = CALCULATE(COUNT(data[Gender]),data[Gender]="female")
+
+no of males = CALCULATE(COUNT(data[Gender]),data[Gender]="male")
+
+running total = 
+    var currentdate = LASTDATE(data[Date of Join])
+RETURN
+    CALCULATE([sumcount2],ALL(data[Date of Join]),data[Date of Join])
+    
+    Running Total2 = 
+CALCULATE(
+    COUNTROWS(data),
+    FILTER(
+        ALL(data),
+        data[Date of Join] <= MAX(data[Date of Join])
+    )
+)
+
+sumcount = COUNT(data[Age])
+
+sumcount2 = DISTINCTCOUNT(data[Emp ID])
+
+total fem salaries = CALCULATE(SUM(data[Salary]), data[Gender]="female")
+
+total male salaries = CALCULATE(SUM(data[Salary]),data[Gender]="male")
