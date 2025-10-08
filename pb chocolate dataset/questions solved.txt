@@ -1,0 +1,23 @@
+Sales Data Analysis Summary
+
+In this dataset, we have performed a comprehensive sales analysis covering the following aspects:
+
+Total Boxes Sold – Calculated the overall number of boxes sold.
+
+Total Sales – Computed overall sales across all products.
+
+Sales per Box – Determined the average sales value per box.
+
+Sales by Country – Analyzed total sales on a country-wise basis.
+
+Product Share – Calculated the percentage contribution of each product to overall sales.
+
+Salesperson Market Share – Determined the percentage of total sales attributed to each salesperson.
+
+Product-wise Total Sales – Analyzed total sales by individual products.
+
+Salesperson-wise Product Sales – Evaluated the total sales of products handled by each salesperson.
+
+Drill-down Functionality – Implemented drill-down options to explore detailed data by product and country.
+
+Time-based Sales Analysis – Analyzed total sales by year, quarter, and month, including Month-to-Date (MTD) and Year-to-Date (YTD) figures.
